@@ -1,0 +1,10 @@
+--- /datalab/web/server.js	2019-06-10 21:50:48.000000000 +0000
++++ /datalab/web/server.js	2020-07-26 11:32:36.862174210 +0000
+@@ -270,6 +270,7 @@
+ }
+ function requestIsCrossOrigin(request) {
+     if (request.headers.origin) {
++        if (url.parse(request.headers.origin).host.endsWith('.cloudshell.dev')) return false;
+         return url.parse(request.headers.origin).host !== request.headers.host;
+     }
+     else if (request.headers.referer) {

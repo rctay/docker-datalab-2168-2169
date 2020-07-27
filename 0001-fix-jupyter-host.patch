@@ -1,0 +1,12 @@
+--- /datalab/web/config/settings.json	2019-06-10 21:03:43.000000000 +0000
++++ /datalab/web/config/settings.json	2020-07-26 06:02:09.116324014 +0000
+@@ -19,7 +19,7 @@
+     "--no-browser",
+     "--log-level=DEBUG",
+     "--debug",
+-    "--NotebookApp.allow_origin_pat=\".*-dot-devshell.appspot.com$\"",
++    "--NotebookApp.allow_origin_pat=\".*[.]cloudshell[.]dev$\"",
+     "--NotebookApp.log_format=\"%(message)s\"",
+     "--NotebookApp.token=",
+     "--Session.key=b'\"\"'",
+
